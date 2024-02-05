@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>XML y JSON</title>
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+        <img src="imagenes/icono.jpg" width="50" alt="Logo de la pagina web">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://lm-xml-apuntes.readthedocs.io/apuntes/10_introduccion_xml.html" target="_blank">XML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.mauriciodeveloper.com/post/guia-completa-sobre-json-formato-ligero-para-intercambio-de-datos-786?utm_content=cmp-true" target="_blank">JSON</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html" target="_blank">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+      <!--columna lateral-->
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <h4>Categorías</h4>
+          <ul>
+            <li>Programación Web</li>
+            <li>XML</li>
+            <li>JSON</li>
+          </ul>
+          <h4>Últimos Posts</h4>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=AZihBEg8VBk">¿Que es XML?</a></li>
+            <li><a href="https://www.youtube.com/watch?v=RhxOTqFbI5Q">¿Que es JSON?</a></li>
+          </ul>
+          <h4>Síguenos en Redes Sociales</h4>
+        </a>
+        <a href="https://www.google.com/intl/es/gmail/about/" class="social-link">
+          <i class="far fa-envelope"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="social-link">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        </div>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="col-lg-9">
+        <h2>Introducción</h2>
+        <p>
+            XML (Extensible Markup Language) y JSON (JavaScript Object Notation) son dos formatos de intercambio de datos ampliamente utilizados en el desarrollo de aplicaciones web y empresariales. Ambos desempeñan un papel crucial en la transmisión y almacenamiento de información estructurada de manera eficiente y legible. Este trabajo de investigación abordará la historia, normas de uso y sintaxis, así como las aplicaciones en el ámbito empresarial de XML y JSON.
+        </p>
+        <!-- Contenido del artículo sobre XML -->
+        <div class="article">
+          <h2 id="xml">XML</h2>
+          <h5><strong>Historia</strong></h5>
+          <!-- Contenido del artículo sobre XML -->
+          <p>
+            XML fue desarrollado por el World Wide Web Consortium (W3C) y su primera versión se publicó en febrero de 1998. La necesidad de un formato de marcado genérico y extensible que permitiera la creación de documentos con estructuras definidas impulsó el desarrollo de XML. Desde entonces, XML se ha convertido en un estándar ampliamente adoptado en la representación de datos estructurados y el intercambio de información entre sistemas.
+          </p>
+          <img src="imagenes/xml_imagen.webp" alt="imagen" width="600">
+          <h5><strong>Normas de Uso y Sintaxis</strong></h5>
+          <p>
+            XML utiliza marcas o etiquetas para definir elementos y atributos para describir propiedades. Su estructura jerárquica permite representar información de manera semántica. Aquí hay un ejemplo básico:
+          </p>
+          <pre>
+            &lt;libro&gt;
+              &lt;titulo&gt;Introducción a XML&lt;/titulo&gt;
+              &lt;autor&gt;John Doe&lt;/autor&gt;
+              &lt;precio&gt;29.99&lt;/precio&gt;
+            &lt;/libro&gt;
+          </pre>
+          <h5><strong>Aplicaciones en el Ámbito Empresarial</strong></h5>
+            <p><strong>Intercambio de Datos:</strong> XML se utiliza comúnmente para intercambiar datos entre sistemas heterogéneos. Su capacidad para representar información estructurada de manera clara facilita la interoperabilidad entre aplicaciones empresariales.</p>
+             <p><strong>Configuración de Servicios Web:</strong>XML se utiliza en la configuración de servicios web mediante el uso de estándares como WSDL (Web Services Description Language) y SOAP (Simple Object Access Protocol).</p>
+        
+        </div>
+
+        <!-- Contenido del artículo sobre JSON -->
+        <div class="article">
+          <h2 id="json">JSON</h2>
+          <h5><strong>Historia</strong></h5>
+          <p>
+            JSON, por otro lado, es un formato de datos ligero y fácil de leer. Fue creado por Douglas Crockford y especificado en el RFC 8259 en diciembre de 2017. Aunque su popularidad se ha disparado en la era de la web moderna y las aplicaciones basadas en JavaScript, JSON se utiliza en una variedad de lenguajes de programación y entornos debido a su simplicidad y eficiencia.
+          </p>
+          <img src="imagenes/json_imagen.jpg" alt="imagen" width="600">
+          <h5><strong>Normas de Uso y Sintaxis</strong></h5>
+          <p>
+            JSON, en contraste, utiliza una estructura de pares clave-valor y es más conciso. Su sintaxis es nativa en JavaScript, lo que facilita su uso en aplicaciones web. Aquí hay un ejemplo equivalente al XML anterior:
+          </p>
+          <pre>
+            {
+              &quot;libro&quot;: {
+                &quot;titulo&quot;: &quot;Introducción a XML&quot;,
+                &quot;autor&quot;: &quot;John Doe&quot;,
+                &quot;precio&quot;: 29.99
+              }
+            }
+          </pre>
+          <h5><strong>Aplicaciones en el Ámbito Empresarial</strong></h5>
+            <p><strong>APIs y Servicios Web:</strong> JSON es ampliamente utilizado en APIs y servicios web debido a su facilidad de lectura y escritura en JavaScript. Es la elección común para la transmisión de datos en aplicaciones web modernas.</p>
+            <p><strong>Almacenamiento de Datos:</strong>En el ámbito empresarial, JSON se utiliza para almacenar y transmitir datos en bases de datos NoSQL, como MongoDB, que almacenan datos en formato JSON.</p>
+          <h2>Conclusión</h2>
+          <p>
+            Tanto XML como JSON desempeñan un papel esencial en el mundo de la programación y el intercambio de datos. La elección entre ellos a menudo depende de los requisitos específicos del proyecto y del entorno en el que se esté trabajando. Ambos formatos han demostrado su utilidad y versatilidad en una variedad de aplicaciones empresariales y continuarán desempeñando un papel fundamental en el desarrollo de software y sistemas en el futuro.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ <!-- Pie de pagina --> 
+  <footer>
+    <div class="footer-social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2024 Blog de Programación. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>
